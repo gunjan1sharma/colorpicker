@@ -63,6 +63,8 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import PickerCard from "../components/PickerCard";
 import { Box, Button, Dialog, IconButton, Modal } from "@mui/material";
 import UpMenu from "../components/UpMenu";
+import "../css/index.css";
+import "../index.css";
 import { ColorContext } from "../extras/ColorContext";
 
 const style = {
