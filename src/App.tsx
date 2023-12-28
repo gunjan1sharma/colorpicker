@@ -3,6 +3,9 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer";
 import { ColorContext } from "./extras/ColorContext";
+import YourIP from "./excomponents/YourIp";
+import UpMenu from "./components/UpMenu";
+import PdfTextExtractor from "./excomponents/PdfTextExtractor";
 
 function App() {
   const [color, setColor] = useState<string>("");
@@ -12,13 +15,16 @@ function App() {
 
   return (
     <div>
+      <UpMenu />
       <ColorContext.Provider
         value={{
           color: color,
           setColor: handleColorChange,
         }}
       >
-        <HomePage />
+        <PdfTextExtractor />
+        {/* <YourIP /> */}
+        {/* <HomePage /> */}
       </ColorContext.Provider>
       <Footer />
     </div>
